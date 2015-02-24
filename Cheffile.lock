@@ -1,0 +1,67 @@
+SITE
+  remote: http://community.opscode.com/api/v1
+  specs:
+    apt (2.6.1)
+    build-essential (2.1.3)
+    chef-sugar (2.5.0)
+    chef_handler (1.1.6)
+    dmg (2.2.2)
+    git (4.1.0)
+      build-essential (>= 0.0.0)
+      dmg (>= 0.0.0)
+      runit (>= 1.0)
+      windows (>= 0.0.0)
+      yum (~> 3.0)
+      yum-epel (>= 0.0.0)
+    iis (4.0.0)
+      windows (>= 1.34.6)
+    mysql (6.0.13)
+      smf (>= 0.0.0)
+      yum-mysql-community (>= 0.0.0)
+    php (1.5.0)
+      build-essential (>= 0.0.0)
+      iis (>= 0.0.0)
+      mysql (>= 0.0.0)
+      windows (>= 0.0.0)
+      xml (>= 0.0.0)
+      yum-epel (>= 0.0.0)
+    python (1.4.6)
+      build-essential (>= 0.0.0)
+      yum-epel (>= 0.0.0)
+    rbac (1.0.2)
+    runit (1.5.16)
+      build-essential (>= 0.0.0)
+      yum (~> 3.0)
+      yum-epel (>= 0.0.0)
+    smf (2.2.1)
+      rbac (>= 1.0.1)
+    vim (1.1.2)
+    windows (1.36.6)
+      chef_handler (>= 0.0.0)
+    xml (1.2.13)
+      build-essential (>= 0.0.0)
+      chef-sugar (>= 0.0.0)
+    yum (3.5.3)
+    yum-epel (0.6.0)
+      yum (~> 3.0)
+    yum-mysql-community (0.1.13)
+      yum (>= 3.0)
+
+GIT
+  remote: https://github.com/mdxp/nodejs-cookbook
+  ref: master
+  sha: e2415cd8c4e03dccf21d7ef6ca31e1c5c81467ca
+  specs:
+    nodejs (1.3.0)
+      apt (>= 0.0.0)
+      build-essential (>= 0.0.0)
+      yum-epel (>= 0.0.0)
+
+DEPENDENCIES
+  apt (>= 0)
+  git (>= 0)
+  nodejs (>= 0)
+  php (>= 0)
+  python (>= 0)
+  vim (>= 0)
+
