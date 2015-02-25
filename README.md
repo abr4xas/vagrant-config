@@ -1,15 +1,21 @@
-![Vagrant Logo](logo_vagrant.png)
-# Vagrant
-Pre-Requisites
 
 There are four software tools which you will need on your machine for this project:
 
-* Vagrant
-* VirtualBox
-* Git
-* SSH
+* [Vagrant](http://www.vagrantup.com/downloads.html)
+* [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 
 ### Setup
+
+* Quick install
+
+Simply run this: ```curl -L http://rove.io/install | bash```
+
+* Install VirtualBox Guest Additions Plugin (This step is optional).
+
+```bash
+cd /path/to/your/repository
+vagrant plugin install vagrant-vbguest
+```
 
 * Start the virtual machine for the first time:
 
@@ -28,5 +34,6 @@ vagrant ssh
 exit
 vagrant reload
 ```
+
 #### Source
-[http://owencampbell.me.uk/pelican-starter](http://owencampbell.me.uk/pelican-starter).
+Doc: [http://owencampbell.me.uk/pelican-starter](http://owencampbell.me.uk/pelican-starter).

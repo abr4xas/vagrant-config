@@ -14,6 +14,7 @@ output.tar.gz
 tmp
 tmp/*
 .DS_Store
+Cheffile.lock
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
