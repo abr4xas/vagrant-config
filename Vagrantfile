@@ -10,7 +10,8 @@ Vagrant.configure("2") do |config|
   config.ssh.forward_agent = true
   config.vm.network :forwarded_port, guest: 8000, host: 1234
   config.vm.boot_timeout = 300    
-    
+  config.vm.synced_folder "development/", "/home/vagrant/development"
+  
   config.vm.provision :chef_solo do |chef|
     chef.cookbooks_path = ["cookbooks"]
     chef.add_recipe :apt

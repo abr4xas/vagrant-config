@@ -7,7 +7,7 @@ There are four software tools which you will need on your machine for this proje
 * [Vagrant](http://www.vagrantup.com/downloads.html)
 * [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 
-### Setup
+## Setup
 
 * Quick install
 
@@ -37,6 +37,9 @@ vagrant ssh
 exit
 vagrant reload
 ```
+## How to use
+
+The ```development``` folder contains the source code for your project.
 
 #### Source
 Doc: [http://owencampbell.me.uk/pelican-starter](http://owencampbell.me.uk/pelican-starter).
