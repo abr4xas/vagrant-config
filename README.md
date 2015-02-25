@@ -1,3 +1,6 @@
+![Vagrant Logo](logo_vagrant.png)
+# Vagrant
+Pre-Requisites
 
 There are four software tools which you will need on your machine for this project:
 
