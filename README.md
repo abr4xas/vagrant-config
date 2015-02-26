@@ -28,7 +28,10 @@ $ vagrant plugin install vagrant-vbguest
 ```bash
 $ vagrant ssh
 ```
+
 This will take some time. It has to download the operating system and all the tools to install on your new virtual machine.
+
+* Connect to the virtual machine via ssh:
 
 * To Stop the Virtual Machine:
 
