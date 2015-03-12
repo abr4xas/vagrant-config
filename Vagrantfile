@@ -28,6 +28,11 @@ Vagrant.configure("2") do |config|
   end
     
     # Install dependencies
-    config.vm.provision :shell, :path => "dependencies.sh"
+#    config.vm.provision :shell, :path => "dependencies.sh"
+    
+    # Shell provisioning
+    config.vm.provision "shell" do |s|
+        s.path = "provision/setup.sh"
+    end    
     
 end

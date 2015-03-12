@@ -8,6 +8,9 @@ cache/*
 output.tar.gz
 .vagrant
 .vagrant/*
+.vagrant/machines/*
+.vagrant/machines/default/*
+.vagrant/machines/default/virtualbox/*
 tmp
 tmp/*
 .DS_Store
