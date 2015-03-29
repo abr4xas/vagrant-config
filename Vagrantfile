@@ -19,10 +19,10 @@ Vagrant.configure("2") do |config|
     end
     # VirtualBox GUI Name
     config.vm.provider "virtualbox" do |v|
-        v.name = "Kitchen"
+        v.name = "Robbie"
     end
     # VM Name
     # Bringing machine 'Kitchen' up with 'virtualbox' provider...
-    config.vm.define :Kitchen do |t|
+    config.vm.define :Robbie do |t|
     end
 end
