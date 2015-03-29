@@ -3,9 +3,11 @@ echo "Provisioning virtual machine..."
 echo "Please, wait..."
 # Use single quotes instead of double quotes to make it work with special-character passwords
 PASSWORD='root'
+# update 
+sudo apt-get update -y > /dev/null 2>&1
 # install apache 2.5 and php 5.5
 sudo apt-get install apache2 -y > /dev/null 2>&1
-sudo apt-get install php5 libapache2-mod-php5 php5-mcrypt -y > /dev/null 2>&1
+sudo apt-get install php5 libapache2-mod-php5 php5-mcrypt php5-cli -y > /dev/null 2>&1
 # install mysql and give password to installer
 sudo debconf-set-selections <<< "mysql-server mysql-server/root_password password $PASSWORD"
 sudo debconf-set-selections <<< "mysql-server mysql-server/root_password_again password $PASSWORD"
@@ -32,16 +34,18 @@ EOF
 echo "${VHOST}" > /etc/apache2/sites-available/000-default.conf
 # enable mod_rewrite
 sudo a2enmod rewrite
+# enable php5-mcrypt
+sudo php5enmod mcrypt
 # restart apache
-service apache2 restart
+sudo service apache2 restart
 # install Composer
 curl -s https://getcomposer.org/installer | php
-mv composer.phar /usr/local/bin/composer
+sudo mv composer.phar /usr/local/bin/composer
 sudo apt-get install git -y > /dev/null 2>&1
 sudo apt-get install nodejs -y > /dev/null 2>&1
 sudo apt-get install npm -y > /dev/null 2>&1
 sudo apt-get install python-pip -y > /dev/null 2>&1
 sudo apt-get install lftp -y > /dev/null 2>&1
 # Install globally dependencies
-sudo npm install -g bower
+sudo npm install -g bower > /dev/null 2>&1
 echo "Finished provisioning."
