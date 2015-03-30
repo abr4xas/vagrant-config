@@ -22,10 +22,9 @@ A super-simple Vagrantfile to setup a LAMP stack inside Vagrant 100% automatical
 
 setup.sh will:
 
-* Install apache 2.4, php 5.5, MySQL, PHPMyAdmin, git and Composer.
+* Install apache 2.4, php 5.5, MySQL, PHPMyAdmin, Composer, nodejs, npm, bower, git, python-pip and lftp.
 * Setting a pre-chosen password for MySQL and PHPMyAdmin ```root```.
-* Activate mod_rewrite and add AllowOverride All to the vhost settings.
-* Install: Composer, nodejs, npm, bower, git, python-pip and lftp.
+* Activate ```mod_rewrite``` and add ```AllowOverride All``` to the vhost settings.
 
 
 ## Connect to the Virtual Machine
