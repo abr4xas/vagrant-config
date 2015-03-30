@@ -6,14 +6,10 @@ Pre-requisites:
 
 There are 2 software tools which you will need on your machine for this project:
 
-* [Vagrant](http://www.vagrantup.com/downloads.html)
-* [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+* [Vagrant](http://www.vagrantup.com/downloads.html).
+* [VirtualBox](https://www.virtualbox.org/wiki/Downloads).
 
-## Setup
-
-* Quick install
-
-Simply run this: ```curl -L http://rove.io/install | bash```
+# Setup
 
 ## Connect to the Virtual Machine
 
