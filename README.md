@@ -15,7 +15,10 @@ A super-simple Vagrantfile to setup a LAMP stack inside Vagrant 100% automatical
 
 * Setup a Ubuntu 14.04 LTS "Trustry Thar" 64bit box
 * Private network, which allows host-only access to the machine using a specific IP: ```192.168.30.10```
-* Forwarded port: ```80 to 8080```, ```8000 to 1234```, ```3000 to 1235```.
+* Forwarded port: 
+    * ```80 to 8080```
+    * ```8000 to 1234```
+    * ```3000 to 1235```
 
 setup.sh will:
 
@@ -77,6 +80,6 @@ $ vagrant destroy
 
 The ```development``` folder contains the source code for your project.
 
-### You own Cheffile?
+### 
 
-[Rove.io](http://rove.io/) is a service that allows you to pregenerate typical Vagrant builds. ;)
+```setup.sh``` based on: [panique/vagrant-lamp-bootstrap](https://github.com/panique/vagrant-lamp-bootstrap).
