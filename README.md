@@ -9,7 +9,21 @@ There are 2 software tools which you will need on your machine for this project:
 * [Vagrant](http://www.vagrantup.com/downloads.html).
 * [VirtualBox](https://www.virtualbox.org/wiki/Downloads).
 
-# Setup
+___
+
+A super-simple Vagrantfile to setup a LAMP stack inside Vagrant 100% automatically.
+
+* Setup a Ubuntu 14.04 LTS "Trustry Thar" 64bit box
+* Private network, which allows host-only access to the machine using a specific IP: ```192.168.30.10```
+* Forwarded port: ```80 to 8080```, ```8000 to 1234```, ```3000 to 1235```.
+
+setup.sh will:
+
+* Install apache 2.4, php 5.5, MySQL, PHPMyAdmin, git and Composer.
+* Setting a pre-chosen password for MySQL and PHPMyAdmin ```root```.
+* Activate mod_rewrite and add AllowOverride All to the vhost settings.
+* Install: Composer, nodejs, npm, bower, git, python-pip and lftp.
+
 
 ## Connect to the Virtual Machine
 
