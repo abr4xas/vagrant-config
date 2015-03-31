@@ -13,7 +13,7 @@ Vagrant.configure("2") do |config|
     config.vm.network :forwarded_port, guest: 8000, host: 1234   
     config.vm.network :forwarded_port, guest: 3000, host: 1235   
     config.vm.boot_timeout = 300
-    config.vm.synced_folder "development/", "/var/www/html", :mount_options => ["dmode=777", "fmode=666"]
+    config.vm.synced_folder "development/", "/var/www/html", type: "rsync"
     # Shell provisioning
     config.vm.provision "shell" do |s|
         s.path = "provision/setup.sh"
