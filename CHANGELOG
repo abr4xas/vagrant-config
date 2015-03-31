@@ -1,3 +1,15 @@
+commit 7d9fa98bd79236270686067ff9e01e0e33c9502d
+Author: abr4xas <me@abr4xas.org>
+Date:   Tue Mar 31 18:52:27 2015 -0430
+
+    Synced folder type: rsync
+
+commit ba33af9dc978cae923d67ac8ddb0a75f356c1715
+Author: abr4xas <me@abr4xas.org>
+Date:   Mon Mar 30 14:34:35 2015 -0430
+
+    Actualizado README
+
 commit d4bf49a05cf8c3e94f435643691243c452578101
 Author: abr4xas <me@abr4xas.org>
 Date:   Mon Mar 30 14:33:28 2015 -0430
