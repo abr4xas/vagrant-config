@@ -34,9 +34,9 @@ EOF
 echo "${VHOST}" > /etc/apache2/sites-available/000-default.conf
 sudo a2enmod rewrite
 sudo php5enmod mcrypt
-sudo service apache2 restart
 sudo rm /etc/php5/apache2/php.ini  > /dev/null 2>&1
 sudo cp php.ini /etc/php5/apache2/ > /dev/null 2>&1
+sudo service apache2 restart
 curl -s https://getcomposer.org/installer | php > /dev/null 2>&1
 sudo mv composer.phar /usr/local/bin/composer > /dev/null 2>&1
 sudo apt-get install python-pip -y > /dev/null 2>&1
