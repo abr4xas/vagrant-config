@@ -32,19 +32,17 @@ VHOST=$(cat <<EOF
 EOF
 )
 echo "${VHOST}" > /etc/apache2/sites-available/000-default.conf
-# enable mod_rewrite
 sudo a2enmod rewrite
-# enable php5-mcrypt
 sudo php5enmod mcrypt
-# restart apache
 sudo service apache2 restart
-# install Composer
-curl -s https://getcomposer.org/installer | php
-sudo mv composer.phar /usr/local/bin/composer
-sudo apt-get install git -y > /dev/null 2>&1
-sudo apt-get install nodejs -y > /dev/null 2>&1
-sudo apt-get install npm -y > /dev/null 2>&1
+sudo rm /etc/php5/apache2/php.ini  > /dev/null 2>&1
+sudo cp php.ini /etc/php5/apache2/ > /dev/null 2>&1
+curl -s https://getcomposer.org/installer | php > /dev/null 2>&1
+sudo mv composer.phar /usr/local/bin/composer > /dev/null 2>&1
 sudo apt-get install python-pip -y > /dev/null 2>&1
+sudo apt-get install nodejs -y > /dev/null 2>&1
+sudo apt-get install git -y > /dev/null 2>&1
+sudo apt-get install npm -y > /dev/null 2>&1
 sudo apt-get install lftp -y > /dev/null 2>&1
 # Install globally dependencies
 sudo npm install -g bower > /dev/null 2>&1

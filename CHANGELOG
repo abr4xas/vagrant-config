@@ -1,3 +1,15 @@
+commit d0bde656c86fe31edcbc83cd231d8aabaa0f3210
+Author: ángel <abr4xas@users.noreply.github.com>
+Date:   Sun Apr 19 22:55:44 2015 -0430
+
+    Create php.ini
+
+commit be86d599e4d4a1759bba321a26f02080af4b6e40
+Author: abr4xas <me@abr4xas.org>
+Date:   Tue Mar 31 18:52:45 2015 -0430
+
+    Synced folder type: rsync
+
 commit 7d9fa98bd79236270686067ff9e01e0e33c9502d
 Author: abr4xas <me@abr4xas.org>
 Date:   Tue Mar 31 18:52:27 2015 -0430
