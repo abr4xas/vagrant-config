@@ -19,6 +19,7 @@ Vagrant.configure("2") do |config|
     # VirtualBox GUI Name
     config.vm.provider "virtualbox" do |v|
         v.name = "Robbie"
+        v.memory = 524
     end
     # VM Name
     # Bringing machine 'Robbie' up with 'virtualbox' provider...
