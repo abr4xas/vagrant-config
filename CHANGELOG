@@ -1,3 +1,33 @@
+commit 76fece72e96113c7a9cd5c8a488d7767cb23af0c
+Author: ángel <abr4xas@users.noreply.github.com>
+Date:   Wed Jun 24 21:49:28 2015 -0430
+
+    Update Vagrantfile
+
+commit 31158bb6e9f754ccdd4ab9883706bad213a20d0a
+Author: ángel <abr4xas@users.noreply.github.com>
+Date:   Wed Jun 24 21:48:33 2015 -0430
+
+    Update setup.sh
+
+commit b6be675c05195d0fc355701ab0d904443e32779d
+Author: ángel <abr4xas@users.noreply.github.com>
+Date:   Wed Jun 3 17:48:16 2015 -0430
+
+    Update setup.sh
+
+commit 03e2a687b35382fbdb057a3712982517d5807943
+Author: ángel <abr4xas@users.noreply.github.com>
+Date:   Fri May 15 00:16:17 2015 -0430
+
+    Create info.php
+
+commit f2ffbd171bc2e49d45a4820b2f47917e591d5c31
+Author: abr4xas <me@abr4xas.org>
+Date:   Mon Apr 27 00:41:48 2015 -0430
+
+    Actualizado
+
 commit 7e1698f04036cd8ec8d0eb1d320cf3875c77e4ad
 Author: abr4xas <me@abr4xas.org>
 Date:   Mon Apr 27 00:34:15 2015 -0430

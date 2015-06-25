@@ -16,3 +16,6 @@ $RECYCLE.BIN/
 pblog
 pblog/*
 index.html
+!.gitignore
+!hello.js
+!info.php
