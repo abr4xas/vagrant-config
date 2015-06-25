@@ -1,3 +1,9 @@
+commit e87af864fa26e4dcda5bfaa7bb83c90a9f577dd4
+Author: abr4xas <me@abr4xas.org>
+Date:   Thu Jun 25 07:54:18 2015 -0430
+
+    se configura VM para que solo use 512 de RAM
+
 commit fa79112f52747851441660cd1d073188c9a04244
 Author: abr4xas <me@abr4xas.org>
 Date:   Wed Jun 24 23:58:08 2015 -0430
