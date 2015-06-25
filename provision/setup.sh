@@ -27,22 +27,9 @@ EOF
 echo "${VHOST}" > /etc/apache2/sites-available/000-default.conf
 sudo a2enmod rewrite deflate expires headers > /dev/null 2>&1
 sudo php5enmod mcrypt  > /dev/null 2>&1
-sudo rm /etc/php5/apache2/php.ini  > /dev/null 2>&1
-cd /etc/php5/apache2/  > /dev/null 2>&1
-sudo wget -c https://raw.githubusercontent.com/abr4xas/vagrant-config/master/provision/php.ini > /dev/null 2>&1
-cd > /dev/null 2>&1
 sudo service apache2 restart  > /dev/null 2>&1
 curl -s https://getcomposer.org/installer | php > /dev/null 2>&1
 sudo mv composer.phar /usr/local/bin/composer > /dev/null 2>&1
-sudo wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh > /dev/null 2>&1
-sudo curl -sSL https://rvm.io/mpapis.asc | gpg --import - > /dev/null 2>&1
-sudo curl -L https://get.rvm.io | bash -s stable > /dev/null 2>&1
-sudo source ~/.rvm/scripts/rvm > /dev/null 2>&1
-sudo rvm requirements > /dev/null 2>&1
-sudo rvm install ruby > /dev/null 2>&1
-sudo rvm use ruby --default > /dev/null 2>&1
-sudo rvm rubygems current > /dev/null 2>&1
-sudo gem install rails > /dev/null 2>&1
 curl https://npmjs.org/install.sh | sh > /dev/null 2>&1
 sudo npm install -g bower > /dev/null 2>&1
 echo "Finished provisioning."
