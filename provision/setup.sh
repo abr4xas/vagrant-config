@@ -29,6 +29,7 @@ EOF
 curl -sL https://deb.nodesource.com/setup_0.12 | sudo bash -  > /dev/null 2>&1
 curl -sL https://npmjs.org/install.sh | sudo sh > /dev/null 2>&1
 sudo npm install -g bower > /dev/null 2>&1
+sudo npm install -g nodemon > /dev/null 2>&1
 sudo apt-get install nodejs -y > /dev/null 2>&1
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
 echo "deb http://repo.mongodb.org/apt/ubuntu "$(lsb_release -sc)"/mongodb-org/3.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.0.list
