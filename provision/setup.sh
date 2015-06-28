@@ -6,7 +6,7 @@ PASSWORD='root'
 sudo apt-get update -y > /dev/null 2>&1
 curl -s https://getcomposer.org/installer | php > /dev/null 2>&1
 sudo mv composer.phar /usr/local/bin/composer > /dev/null 2>&1
-sudo apt-get install apache2 mod_rewrite mod_deflate mod_expires mod_headers git python-pip lftp php5 libapache2-mod-php5 php5-mcrypt php5-cli php5-curl -y /dev/null 2>&1
+sudo apt-get install apache2 mod_rewrite mod_deflate mod_expires mod_headers git python-pip lftp php5 libapache2-mod-php5 php5-mcrypt php5-cli php5-curl python-pip -y /dev/null 2>&1
 sudo debconf-set-selections <<< "mysql-server mysql-server/root_password password $PASSWORD"
 sudo debconf-set-selections <<< "mysql-server mysql-server/root_password_again password $PASSWORD"
 sudo apt-get install mysql-server libapache2-mod-auth-mysql php5-mysql -y > /dev/null 2>&1
