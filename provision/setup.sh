@@ -26,8 +26,13 @@ VHOST=$(cat <<EOF
 </VirtualHost>
 EOF
 )
+echo "${VHOST}" > /etc/apache2/sites-available/000-default.conf
+sudo a2enmod rewrite deflate expires headers > /dev/null 2>&1
+sudo php5enmod mcrypt  > /dev/null 2>&1
+sudo service apache2 restart  > /dev/null 2>&1
 curl -sL https://deb.nodesource.com/setup_0.12 | sudo bash -  > /dev/null 2>&1
 curl -sL https://npmjs.org/install.sh | sudo sh > /dev/null 2>&1
+sudo npm update -g > /dev/null 2>&1
 sudo npm install -g bower > /dev/null 2>&1
 sudo npm install -g nodemon > /dev/null 2>&1
 sudo apt-get install nodejs -y > /dev/null 2>&1
@@ -36,8 +41,4 @@ echo "deb http://repo.mongodb.org/apt/ubuntu "$(lsb_release -sc)"/mongodb-org/3.
 sudo apt-get update  > /dev/null 2>&1
 sudo apt-get install mongodb-org -y > /dev/null 2>&1
 sudo su -c "gem install sass" -y > /dev/null 2>&1
-echo "${VHOST}" > /etc/apache2/sites-available/000-default.conf
-sudo a2enmod rewrite deflate expires headers > /dev/null 2>&1
-sudo php5enmod mcrypt  > /dev/null 2>&1
-sudo service apache2 restart  > /dev/null 2>&1
 echo "Finished provisioning."
