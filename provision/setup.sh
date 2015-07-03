@@ -3,7 +3,7 @@ echo "Provisioning virtual machine..."
 echo "Please, wait..."
 PASSWORD='root'
 # update
-sudo apt-get update -y > /dev/null 2>&1
+sudo apt-get update && sudo apt-get upgrade -y > /dev/null 2>&1
 curl -s https://getcomposer.org/installer | php > /dev/null 2>&1
 sudo mv composer.phar /usr/local/bin/composer > /dev/null 2>&1
 sudo apt-get install apache2 mod_rewrite mod_deflate mod_expires mod_headers git python-pip lftp php5 libapache2-mod-php5 php5-mcrypt php5-cli php5-curl python-pip -y /dev/null 2>&1
@@ -33,12 +33,11 @@ sudo service apache2 restart  > /dev/null 2>&1
 curl -sL https://deb.nodesource.com/setup_0.12 | sudo bash -  > /dev/null 2>&1
 curl -sL https://npmjs.org/install.sh | sudo sh > /dev/null 2>&1
 sudo npm update -g > /dev/null 2>&1
-sudo npm install -g bower > /dev/null 2>&1
-sudo npm install -g nodemon > /dev/null 2>&1
-sudo apt-get install nodejs -y > /dev/null 2>&1
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
-echo "deb http://repo.mongodb.org/apt/ubuntu "$(lsb_release -sc)"/mongodb-org/3.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.0.list
-sudo apt-get update  > /dev/null 2>&1
-sudo apt-get install mongodb-org -y > /dev/null 2>&1
+sudo npm install nodemon bower -g > /dev/null 2>&1
+source /etc/lsb-release && echo "deb http://download.rethinkdb.com/apt $DISTRIB_CODENAME main" | sudo tee /etc/apt/sources.list.d/rethinkdb.list > /dev/null 2>&1
+wget -qO- http://download.rethinkdb.com/apt/pubkey.gpg | sudo apt-key add - > /dev/null 2>&1
+sudo apt-get update > /dev/null 2>&1
+sudo apt-get install nodejs rethinkdb -y > /dev/null 2>&1
 sudo su -c "gem install sass" -y > /dev/null 2>&1
+sudo apt-get autoremove -y > /dev/null 2>&1
 echo "Finished provisioning."
