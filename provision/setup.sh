@@ -36,7 +36,7 @@ sudo npm update -g > /dev/null 2>&1
 sudo npm install nodemon bower -g > /dev/null 2>&1
 source /etc/lsb-release && echo "deb http://download.rethinkdb.com/apt $DISTRIB_CODENAME main" | sudo tee /etc/apt/sources.list.d/rethinkdb.list > /dev/null 2>&1
 wget -qO- http://download.rethinkdb.com/apt/pubkey.gpg | sudo apt-key add - > /dev/null 2>&1
-sudo apt-get update > /dev/null 2>&1
+sudo apt-get update && sudo apt-get upgrade -y > /dev/null 2>&1
 sudo apt-get install nodejs rethinkdb -y > /dev/null 2>&1
 sudo su -c "gem install sass" -y > /dev/null 2>&1
 sudo apt-get autoremove -y > /dev/null 2>&1
