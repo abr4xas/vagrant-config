@@ -1,275 +1,51 @@
-commit 73337219378469d0c1f6e5718ddb99a42f119f26
-Author: abr4xas <me@abr4xas.org>
-Date:   Thu Jun 25 09:43:14 2015 -0430
-
-    ahora tiene sass
-
-commit e87af864fa26e4dcda5bfaa7bb83c90a9f577dd4
-Author: abr4xas <me@abr4xas.org>
-Date:   Thu Jun 25 07:54:18 2015 -0430
-
-    se configura VM para que solo use 512 de RAM
-
-commit fa79112f52747851441660cd1d073188c9a04244
-Author: abr4xas <me@abr4xas.org>
-Date:   Wed Jun 24 23:58:08 2015 -0430
-
-    instrucciones para instalar mongodb
-
-commit 569bb889db72bd8f5e36d6e66c863388a31d814f
-Author: abr4xas <me@abr4xas.org>
-Date:   Wed Jun 24 23:57:19 2015 -0430
-
-    instrucciones para instalar mongodb
-
-commit 3f8ebd815ec9d195c846753e1ca5a33067e9187f
-Author: abr4xas <me@abr4xas.org>
-Date:   Wed Jun 24 23:05:47 2015 -0430
-
-    actualizando repo
-
-commit 3df3b5f89d0fc4c13fe0c868e0124abdff5580f9
-Author: abr4xas <me@abr4xas.org>
-Date:   Wed Jun 24 23:04:37 2015 -0430
-
-    actualizando repo
-
-commit d540a89867d5841b85320aa1004c8bb9fa695a31
-Author: abr4xas <me@abr4xas.org>
-Date:   Wed Jun 24 23:03:55 2015 -0430
-
-    actualizando repo
-
-commit dc2432e955e768e09b20ef7eec768d4926cafbba
-Author: abr4xas <me@abr4xas.org>
-Date:   Wed Jun 24 23:03:40 2015 -0430
-
-    actualizando repo
-
-commit 76fece72e96113c7a9cd5c8a488d7767cb23af0c
-Author: ángel <abr4xas@users.noreply.github.com>
-Date:   Wed Jun 24 21:49:28 2015 -0430
-
-    Update Vagrantfile
-
-commit 31158bb6e9f754ccdd4ab9883706bad213a20d0a
-Author: ángel <abr4xas@users.noreply.github.com>
-Date:   Wed Jun 24 21:48:33 2015 -0430
-
-    Update setup.sh
-
-commit b6be675c05195d0fc355701ab0d904443e32779d
-Author: ángel <abr4xas@users.noreply.github.com>
-Date:   Wed Jun 3 17:48:16 2015 -0430
-
-    Update setup.sh
-
-commit 03e2a687b35382fbdb057a3712982517d5807943
-Author: ángel <abr4xas@users.noreply.github.com>
-Date:   Fri May 15 00:16:17 2015 -0430
-
-    Create info.php
-
-commit f2ffbd171bc2e49d45a4820b2f47917e591d5c31
-Author: abr4xas <me@abr4xas.org>
-Date:   Mon Apr 27 00:41:48 2015 -0430
-
-    Actualizado
-
-commit 7e1698f04036cd8ec8d0eb1d320cf3875c77e4ad
-Author: abr4xas <me@abr4xas.org>
-Date:   Mon Apr 27 00:34:15 2015 -0430
-
-    Actualizado
-
-commit d0bde656c86fe31edcbc83cd231d8aabaa0f3210
-Author: ángel <abr4xas@users.noreply.github.com>
-Date:   Sun Apr 19 22:55:44 2015 -0430
-
-    Create php.ini
-
-commit be86d599e4d4a1759bba321a26f02080af4b6e40
-Author: abr4xas <me@abr4xas.org>
-Date:   Tue Mar 31 18:52:45 2015 -0430
-
-    Synced folder type: rsync
-
-commit 7d9fa98bd79236270686067ff9e01e0e33c9502d
-Author: abr4xas <me@abr4xas.org>
-Date:   Tue Mar 31 18:52:27 2015 -0430
-
-    Synced folder type: rsync
-
-commit ba33af9dc978cae923d67ac8ddb0a75f356c1715
-Author: abr4xas <me@abr4xas.org>
-Date:   Mon Mar 30 14:34:35 2015 -0430
-
-    Actualizado README
-
-commit d4bf49a05cf8c3e94f435643691243c452578101
-Author: abr4xas <me@abr4xas.org>
-Date:   Mon Mar 30 14:33:28 2015 -0430
-
-    Actualizado README
-
-commit 7a775533b5a8491118858f970fec4bcd5eef1c73
-Author: abr4xas <me@abr4xas.org>
-Date:   Mon Mar 30 14:30:46 2015 -0430
-
-    Actualizado README
-
-commit cc6e7f986de7265697bfc2ff5601b8df0f866de3
-Author: abr4xas <me@abr4xas.org>
-Date:   Mon Mar 30 14:16:06 2015 -0430
-
-    Actualizado README
-
-commit e3d2ffac62732228834a863ae6111f7eef465e70
-Author: abr4xas <me@abr4xas.org>
-Date:   Mon Mar 30 14:12:12 2015 -0430
-
-    actualizado
-
-commit 16e3c7729db329812ee8cf96e9d3962fabb2f372
-Author: abr4xas <me@abr4xas.org>
-Date:   Mon Mar 30 14:11:43 2015 -0430
-
-    deleted
-
-commit 6e74e0a92c5cf53b047dd6d63eb61f943cacb392
-Author: abr4xas <me@abr4xas.org>
-Date:   Sun Mar 29 15:33:12 2015 -0430
-
-    actualizado
-
-commit 9bfac82a8440fed7d1a2eb42a7dd2b13609c6f2c
-Author: abr4xas <me@abr4xas.org>
-Date:   Sun Mar 29 15:32:44 2015 -0430
-
-    actualizado
-
-commit 079fd5a5ecdeed1f23d0ee0baf2d28e44d7fd6c1
-Author: abr4xas <me@abr4xas.org>
-Date:   Sat Mar 28 21:51:27 2015 -0430
-
-    fix
-
-commit e9773e1403042182b02541f580500f35dc05e860
-Author: abr4xas <me@abr4xas.org>
-Date:   Sat Mar 28 21:03:41 2015 -0430
-
-    Actualizando repo
-
-commit 8079b75842eabb93ff42b8c1dc710dc0900bcd32
-Author: abr4xas <me@abr4xas.org>
-Date:   Sat Mar 28 21:03:15 2015 -0430
-
-    Actualizando repo
-
-commit 03d33f43356e6fdb2a5aa8571ea6e71b865ac6cc
-Author: abr4xas <me@abr4xas.org>
-Date:   Sat Mar 28 21:02:00 2015 -0430
-
-    Actualizando repo
-
-commit c815f180a6bd1066e7ae2fb5058b4ec0d6fcc68f
-Author: abr4xas <me@abr4xas.org>
-Date:   Sat Mar 28 18:38:27 2015 -0430
-
-    Actualizando Vagrantfile
-
-commit 1ef63378105e57ba624f7b3b998342faeb4a37e3
-Author: abr4xas <me@abr4xas.org>
-Date:   Thu Mar 12 15:32:35 2015 -0430
-
-    Actualizando Vagrantfile
-
-commit 7f98210a79590b0edc9b0b1fbcc8844301585b0a
-Author: abr4xas <me@abr4xas.org>
-Date:   Thu Mar 12 15:05:53 2015 -0430
-
-    Actualizando repo
-
-commit 70f4f2b08770e275a8350c260ffe2ae45be40c6d
-Author: abr4xas <me@abr4xas.org>
-Date:   Thu Mar 12 15:05:21 2015 -0430
-
-    Organizando repo
-
-commit 875193ebcb16a1fcb4c537f0e675198c671ed819
-Author: abr4xas <me@abr4xas.org>
-Date:   Thu Mar 12 15:04:22 2015 -0430
-
-    Cambios en la organizacion del repo
-
-commit 4b1b707e434c4a2c41a7552269c1fa4422dbf497
-Author: abr4xas <me@abr4xas.org>
-Date:   Tue Mar 10 10:11:39 2015 -0430
-
-    Cambios menores en el repo
-
-commit b65295b26bc276296eea4f88a0876bdbf43f0250
-Author: abr4xas <me@abr4xas.org>
-Date:   Tue Mar 10 10:09:58 2015 -0430
-
-    Use Mac OS X 10.7.5
-
-commit 22789ed1a0c37f17c4f613edd49e0c13f19c77a7
-Author: abr4xas <me@abr4xas.org>
-Date:   Wed Feb 25 20:39:04 2015 -0430
-
-    Actualizando README
-
-commit 676436bec4efff1df355c3133e07010e8db69459
-Author: abr4xas <me@abr4xas.org>
-Date:   Wed Feb 25 20:37:20 2015 -0430
-
-    Actualizando README
-
-commit fe6813385a61a8760360e083d74686d410502e17
-Author: abr4xas <me@abr4xas.org>
-Date:   Wed Feb 25 19:40:52 2015 -0430
-
-    Actualizando README
-
-commit 2ffda53839576e549d49966602e413884f800ce9
-Author: abr4xas <me@abr4xas.org>
-Date:   Wed Feb 25 11:52:51 2015 -0430
-
-    Actualizando repo
-
-commit 8a3f1cab96120e3bde00c3216f4616c7d1a7f034
-Author: abr4xas <me@abr4xas.org>
-Date:   Wed Feb 25 11:33:44 2015 -0430
-
-    Agregada carpeta development
-
-commit 36b3495385bd5fc2a70e57f385861fc5000e0fd8
-Author: abr4xas <me@abr4xas.org>
-Date:   Wed Feb 25 11:13:53 2015 -0430
-
-    Actualizando configuraciones y documentacion
-
-commit 5597d2d7b9de6a2cdaa2e0ec0a3826f4e62f351f
-Author: abr4xas <me@abr4xas.org>
-Date:   Wed Feb 25 11:12:34 2015 -0430
-
-    Actualizando configuraciones y documentacion
-
-commit cbd6791a2ec8385bc4cda171bbfe15dbe4dbab54
-Author: abr4xas <me@abr4xas.org>
-Date:   Tue Feb 24 17:43:23 2015 -0430
-
-    Actualizando repo
-
-commit 896c3bf7b61ef4cb2c62fdb33bbe02b99ba3fb1c
-Author: abr4xas <me@abr4xas.org>
-Date:   Tue Feb 24 15:20:40 2015 -0430
-
-    Actualizando repo
-
-commit 4efcb00fb7dba13ad024433099e6ff7bb55044c2
-Author: ángel <abr4xas@users.noreply.github.com>
-Date:   Tue Feb 24 15:14:39 2015 -0430
-
-    Initial commit
+* ángel 1cc089f Now with rethinkdb :smile:
+* ángel 72c6a6a Update setup.sh
+* ángel 2254814 Update setup.sh
+* ángel 760f108 Update setup.sh
+* abr4xas 4ab7a98 actualizando repo
+* abr4xas 7333721 ahora tiene sass
+* abr4xas e87af86 se configura VM para que solo use 512 de RAM
+* abr4xas fa79112 instrucciones para instalar mongodb
+* abr4xas 569bb88 instrucciones para instalar mongodb
+* abr4xas 3f8ebd8 actualizando repo
+* abr4xas 3df3b5f actualizando repo
+* abr4xas d540a89 actualizando repo
+* abr4xas dc2432e actualizando repo
+* ángel 76fece7 Update Vagrantfile
+* ángel 31158bb Update setup.sh
+* ángel b6be675 Update setup.sh
+* ángel 03e2a68 Create info.php
+* abr4xas f2ffbd1 Actualizado
+* abr4xas 7e1698f Actualizado
+* ángel d0bde65 Create php.ini
+* abr4xas be86d59 Synced folder type: rsync
+* abr4xas 7d9fa98 Synced folder type: rsync
+* abr4xas ba33af9 Actualizado README
+* abr4xas d4bf49a Actualizado README
+* abr4xas 7a77553 Actualizado README
+* abr4xas cc6e7f9 Actualizado README
+* abr4xas e3d2ffa actualizado
+* abr4xas 16e3c77 deleted
+* abr4xas 6e74e0a actualizado
+* abr4xas 9bfac82 actualizado
+* abr4xas 079fd5a fix
+* abr4xas e9773e1 Actualizando repo
+* abr4xas 8079b75 Actualizando repo
+* abr4xas 03d33f4 Actualizando repo
+* abr4xas c815f18 Actualizando Vagrantfile
+* abr4xas 1ef6337 Actualizando Vagrantfile
+* abr4xas 7f98210 Actualizando repo
+* abr4xas 70f4f2b Organizando repo
+* abr4xas 875193e Cambios en la organizacion del repo
+* abr4xas 4b1b707 Cambios menores en el repo
+* abr4xas b65295b Use Mac OS X 10.7.5
+* abr4xas 22789ed Actualizando README
+* abr4xas 676436b Actualizando README
+* abr4xas fe68133 Actualizando README
+* abr4xas 2ffda53 Actualizando repo
+* abr4xas 8a3f1ca Agregada carpeta development
+* abr4xas 36b3495 Actualizando configuraciones y documentacion
+* abr4xas 5597d2d Actualizando configuraciones y documentacion
+* abr4xas cbd6791 Actualizando repo
+* abr4xas 896c3bf Actualizando repo
+* ángel 4efcb00 Initial commit
