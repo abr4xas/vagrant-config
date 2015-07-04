@@ -1,3 +1,4 @@
+* abr4xas 5340bb1 typo @ provision/setup.sh
 * abr4xas aa50e6b actualizando repo, se elimina nfs, se agrega config.vm.hostname
 * abr4xas 90a1dff actualizando repo
 * ángel 1cc089f Now with rethinkdb :smile:
