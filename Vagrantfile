@@ -25,5 +25,6 @@ Vagrant.configure("2") do |config|
     # Bringing machine 'Robbie' up with 'virtualbox' provider...
     config.vm.define :Robbie do |t|
     config.vm.hostname = "Robbie"
+    config.vm.post_up_message = "Welcome to Robbie. Use the command 'vagrant ssh' to access your server."
     end
 end
