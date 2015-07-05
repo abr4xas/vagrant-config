@@ -98,7 +98,7 @@ $ vagrant reload
 $ vagrant destroy
 ```
 
-The ```development``` folder contains the source code for your project.
+The ```dev``` folder contains the source code for your project.
 
 ###
 
