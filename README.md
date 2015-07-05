@@ -42,6 +42,7 @@ setup.sh will:
     * ```root```
 * Activate:
     * ```mod_rewrite```
+
 and add:
 * ```AllowOverride All```
 
