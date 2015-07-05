@@ -40,6 +40,14 @@ wget -qO- http://download.rethinkdb.com/apt/pubkey.gpg | sudo apt-key add - > /d
 sudo apt-get update > /dev/null 2>&1
 sudo apt-get upgrade -y > /dev/null 2>&1
 sudo apt-get install nodejs rethinkdb -y > /dev/null 2>&1
+sudo cp /etc/rethinkdb/default.conf.sample /etc/rethinkdb/instances.d/instance1.conf > /dev/null 2>&1
+sudo echo "runuser=rethinkdb" >> /etc/rethinkdb/instances.d/instance1.conf > /dev/null 2>&1
+sudo echo "rungroup=rethinkdb" >> /etc/rethinkdb/instances.d/instance1.conf > /dev/null 2>&1
+sudo echo "pid-file=/var/run/rethinkdb/rethinkdb.pid" >> /etc/rethinkdb/instances.d/instance1.conf > /dev/null 2>&1
+sudo echo "directory=/var/lib/rethinkdb/default" >> /etc/rethinkdb/instances.d/instance1.conf > /dev/null 2>&1
+sudo echo "bind=all" >> /etc/rethinkdb/instances.d/instance1.conf > /dev/null 2>&1
+sudo echo "server-name=Robbie" >> /etc/rethinkdb/instances.d/instance1.conf > /dev/null 2>&1
+sudo /etc/init.d/rethinkdb start > /dev/null 2>&1
 sudo su -c "gem install sass" -y > /dev/null 2>&1
 sudo apt-get autoremove -y > /dev/null 2>&1
 echo "Finished provisioning."
