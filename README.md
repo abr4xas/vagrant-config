@@ -25,7 +25,6 @@ setup.sh will:
 * Install:
     * apache2
     * git
-    * python-pip
     * lftp
     * php5
     * libapache2-mod-php5
