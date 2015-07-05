@@ -15,16 +15,37 @@ A super-simple Vagrantfile to setup a LAMP stack inside Vagrant 100% automatical
 
 * Setup a Ubuntu 14.04 LTS "Trustry Thar" 64bit box
 * Private network, which allows host-only access to the machine using a specific IP: ```192.168.30.10```
-* Forwarded port: 
+* Forwarded port:
     * ```80 to 8080```
-    * ```8000 to 1234```
-    * ```3000 to 1235```
+    * ```8000 to 8000```
+    * ```3000 to 8000```
 
 setup.sh will:
 
-* Install apache 2.4, php 5.5, MySQL, PHPMyAdmin, Composer, nodejs, npm, bower, git, python-pip and lftp.
-* Setting a pre-chosen password for MySQL and PHPMyAdmin ```root```.
-* Activate ```mod_rewrite``` and add ```AllowOverride All``` to the vhost settings.
+* Install:
+    * apache2
+    * git
+    * python-pip
+    * lftp
+    * php5
+    * libapache2-mod-php5
+    * php5-mcrypt
+    * php5-cli
+    * php5-curl
+    * python-pip
+    * nodemon
+    * bower
+    * nodejs
+    * rethinkdb
+    * sass
+* Setting a pre-chosen password for MySQL and PHPMyAdmin:
+    * ```root```
+* Activate:
+    * ```mod_rewrite```
+and add:
+* ```AllowOverride All```
+
+to the vhost settings.
 
 
 ## Connect to the Virtual Machine
@@ -39,7 +60,7 @@ $ vagrant plugin install vagrant-vbguest
 
 ```bash
 $ vagrant up
-``` 
+```
 
 This will take some time. It has to download the operating system and all the tools to install on your new virtual machine.
 
@@ -79,6 +100,6 @@ $ vagrant destroy
 
 The ```development``` folder contains the source code for your project.
 
-### 
+###
 
 ```setup.sh``` based on: [panique/vagrant-lamp-bootstrap](https://github.com/panique/vagrant-lamp-bootstrap).
