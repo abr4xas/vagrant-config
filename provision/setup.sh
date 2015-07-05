@@ -59,6 +59,6 @@ EOF
 )
 sudo echo "${LOCALE}" >> /etc/locale.gen > /dev/null 2>&1
 sudo /usr/sbin/locale-gen > /dev/null 2>&1
-sudo su -c "gem install sass" -y > /dev/null 2>&1
+sudo gem install sass -y > /dev/null 2>&1
 sudo apt-get autoremove -y > /dev/null 2>&1
 echo "Finished provisioning."
