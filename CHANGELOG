@@ -1,4 +1,9 @@
-* abr4xas a03e2a1 actualizando Vagrantfile
+*   abr4xas 4bc21b0 Merge branch 'master' of https://github.com/abr4xas/vagrant-config
+|\  
+| * ángel 22b0210 Delete index.php
+* | abr4xas ed1db52 actualizando Vagrantfile
+* | abr4xas a03e2a1 actualizando Vagrantfile
+|/  
 * abr4xas 3013d5b fix sass install problem
 * abr4xas 74d0394 actualizando README
 * abr4xas 636b814 fix locale warning
