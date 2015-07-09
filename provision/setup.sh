@@ -58,6 +58,10 @@ EOF
 )
 sudo echo "${LOCALE}" >> /etc/locale.gen > /dev/null 2>&1
 sudo /usr/sbin/locale-gen > /dev/null 2>&1
+echo "export LANGUAGE=en_US.UTF-8" >> ~/.profile > /dev/null 2>&1
+echo "export LANG=en_US.UTF-8" >> ~/.profile > /dev/null 2>&1
+echo "export LC_ALL=en_US.UTF-8" >> ~/.profile > /dev/null 2>&1
+sudo locale-gen en_US.UTF-8 > /dev/null 2>&1
 sudo gem install sass -y > /dev/null 2>&1
 sudo apt-get autoremove -y > /dev/null 2>&1
 echo "Finished provisioning."
