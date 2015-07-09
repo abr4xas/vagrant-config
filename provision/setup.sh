@@ -30,6 +30,7 @@ sudo a2enmod rewrite deflate expires headers > /dev/null 2>&1
 sudo php5enmod mcrypt > /dev/null 2>&1
 sudo service apache2 restart > /dev/null 2>&1
 curl -s https://getcomposer.org/installer | php > /dev/null 2>&1
+sudo mv composer.phar /usr/local/bin/composer > /dev/null 2>&1
 curl -sL https://deb.nodesource.com/setup_0.12 | sudo bash - > /dev/null 2>&1
 curl -sL https://npmjs.org/install.sh | sudo sh > /dev/null 2>&1
 sudo npm update -g > /dev/null 2>&1
