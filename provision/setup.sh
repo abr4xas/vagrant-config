@@ -64,5 +64,4 @@ sudo echo "${RETHINK}" >> /etc/rethinkdb/instances.d/instance1.conf > /dev/null 
 sudo /etc/init.d/rethinkdb start > /dev/null 2>&1
 sudo gem install sass -y > /dev/null 2>&1
 sudo apt-get autoremove -y > /dev/null 2>&1
-sudo update-alternatives --all --skip-auto > /dev/null 2>&1
 echo "Finished provisioning... Please reboot"
