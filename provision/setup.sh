@@ -37,31 +37,37 @@ sudo service apache2 restart > /dev/null 2>&1
 echo "Downloading the Composer executable:..."
 curl -sS https://getcomposer.org/installer | php > /dev/null 2>&1
 sudo mv composer.phar /usr/local/bin/composer > /dev/null 2>&1
-echo "Downloading node & npm:..."
+echo "Downloading and install node & npm:..."
 curl -sL https://deb.nodesource.com/setup_0.12 | sudo -E bash - > /dev/null 2>&1
 sudo aptitude install nodejs -y > /dev/null 2>&1
-source /etc/lsb-release && echo "deb http://download.rethinkdb.com/apt $DISTRIB_CODENAME main" | sudo tee /etc/apt/sources.list.d/rethinkdb.list > /dev/null 2>&1
-echo "Adding public key to Rethinkdb:..."
-wget -qO- http://download.rethinkdb.com/apt/pubkey.gpg | sudo apt-key add - > /dev/null 2>&1
-sudo apt-get update > /dev/null 2>&1
-sudo apt-get upgrade -y > /dev/null 2>&1
-echo "Installing node & rethinkdb:..."
-sudo aptitude install rethinkdb -y > /dev/null 2>&1
 sudo npm update -g > /dev/null 2>&1
 sudo npm install nodemon -g > /dev/null 2>&1
 sudo npm install bower -g > /dev/null 2>&1
-sudo cp /etc/rethinkdb/default.conf.sample /etc/rethinkdb/instances.d/instance1.conf > /dev/null 2>&1
-RETHINK=$(cat <<EOF
-runuser=rethinkdb
-rungroup=rethinkdb
-pid-file=/var/run/rethinkdb/rethinkdb.pid
-directory=/var/lib/rethinkdb/default
-bind=all
-server-name=Robbie
-EOF
-)
-sudo echo "${RETHINK}" >> /etc/rethinkdb/instances.d/instance1.conf > /dev/null 2>&1
-sudo /etc/init.d/rethinkdb start > /dev/null 2>&1
+#echo "Installing rethinkdb:..."
+#sudo aptitude install rethinkdb -y > /dev/null 2>&1
+#source /etc/lsb-release && echo "deb http://download.rethinkdb.com/apt $DISTRIB_CODENAME main" | sudo tee /etc/apt/sources.list.d/rethinkdb.list > /dev/null 2>&1
+#echo "Adding public key to Rethinkdb:..."
+#wget -qO- http://download.rethinkdb.com/apt/pubkey.gpg | sudo apt-key add - > /dev/null 2>&1
+#sudo apt-get update > /dev/null 2>&1
+#sudo apt-get upgrade -y > /dev/null 2>&1
+#sudo cp /etc/rethinkdb/default.conf.sample /etc/rethinkdb/instances.d/instance1.conf > /dev/null 2>&1
+#RETHINK=$(cat <<EOF
+#runuser=rethinkdb
+#rungroup=rethinkdb
+#pid-file=/var/run/rethinkdb/rethinkdb.pid
+#directory=/var/lib/rethinkdb/default
+#bind=all
+#server-name=Robbie
+#EOF
+#)
+#sudo echo "${RETHINK}" >> /etc/rethinkdb/instances.d/instance1.conf > /dev/null 2>&1
+#sudo /etc/init.d/rethinkdb start > /dev/null 2>&1
+echo "Installing MongoDB..."
+echo "Import the MongoDB public GPG Key"
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10 > /dev/null 2>&1
+echo "deb http://repo.mongodb.org/apt/ubuntu "$(lsb_release -sc)"/mongodb-org/3.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.0.list
+sudo apt-get update -y > /dev/null 2>&1
+sudo apt-get install mongodb-org -y > /dev/null 2>&1
 sudo gem install sass -y > /dev/null 2>&1
 sudo apt-get autoremove -y > /dev/null 2>&1
 echo "Finished provisioning... Please reboot"
