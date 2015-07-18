@@ -1,3 +1,4 @@
+* abr4xas 3dffb65 agregando MongoDB como DB primaria
 * abr4xas 3d05082 Optimizando setup.sh, se eliminan instrucciones no necesarias de instalacion y configuracion de paquetes
 * abr4xas 43dff25 actualizando setup.sh :smile:
 * abr4xas 03ec3db actualizando setup.sh
