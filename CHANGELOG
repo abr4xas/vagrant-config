@@ -1,78 +1,79 @@
-* abr4xas 3dffb65 agregando MongoDB como DB primaria
-* abr4xas 3d05082 Optimizando setup.sh, se eliminan instrucciones no necesarias de instalacion y configuracion de paquetes
-* abr4xas 43dff25 actualizando setup.sh :smile:
-* abr4xas 03ec3db actualizando setup.sh
-* abr4xas f24ed47 fix composer issue
-* abr4xas 2d638b0 Setting Locale Settings
-* abr4xas a26d4d3 actualizando Vagrantfile
-*   abr4xas 4bc21b0 Merge branch 'master' of https://github.com/abr4xas/vagrant-config
+* [31m24a14f5[m - [32mabr4xas[m - [33m (HEAD -> master, origin/master, origin/HEAD)[m Agregado subversion [32m(6 weeks ago)[m
+* [31m3dffb65[m - [32mabr4xas[m - [33m (tag: v1.0.1-alpha)[m agregando MongoDB como DB primaria [32m(6 weeks ago)[m
+* [31m3d05082[m - [32mabr4xas[m - [33m (tag: 1.0.0-rc, tag: 1.0.0)[m Optimizando setup.sh, se eliminan instrucciones no necesarias de instalacion y configuracion de paquetes [32m(7 weeks ago)[m
+* [31m43dff25[m - [32mabr4xas[m - [33m (tag: 1.0.0-beta)[m actualizando setup.sh :smile: [32m(7 weeks ago)[m
+* [31m03ec3db[m - [32mabr4xas[m - [33m (tag: 1.0.0-alpha.2)[m actualizando setup.sh [32m(7 weeks ago)[m
+* [31mf24ed47[m - [32mabr4xas[m - [33m (tag: 1.0.0-alpha.1)[m fix composer issue [32m(7 weeks ago)[m
+* [31m2d638b0[m - [32mabr4xas[m - [33m (tag: v1.0.0-alpha)[m Setting Locale Settings [32m(7 weeks ago)[m
+* [31ma26d4d3[m - [32mabr4xas[m - [33m (tag: v1.0.0)[m actualizando Vagrantfile [32m(7 weeks ago)[m
+*   [31m4bc21b0[m - [32mabr4xas[m - [33m[m Merge branch 'master' of https://github.com/abr4xas/vagrant-config [32m(7 weeks ago)[m
 |\  
-| * ángel 22b0210 Delete index.php
-* | abr4xas ed1db52 actualizando Vagrantfile
-* | abr4xas a03e2a1 actualizando Vagrantfile
+| * [31m22b0210[m - [32mángel[m - [33m[m Delete index.php [32m(7 weeks ago)[m
+* | [31med1db52[m - [32mabr4xas[m - [33m[m actualizando Vagrantfile [32m(7 weeks ago)[m
+* | [31ma03e2a1[m - [32mabr4xas[m - [33m[m actualizando Vagrantfile [32m(7 weeks ago)[m
 |/  
-* abr4xas 3013d5b fix sass install problem
-* abr4xas 74d0394 actualizando README
-* abr4xas 636b814 fix locale warning
-* abr4xas a2801a8 agregada configuraciones para ReThinkDB :smile:
-* abr4xas e13db55 actualizando gitignore
-* abr4xas fd0b224 actualizando README
-* abr4xas 6d88e5b actualizando README
-* abr4xas e3ba039 actualizando gitignore
-* abr4xas 1720b2f actualizando README
-* abr4xas e4c0b8d actualizando README
-* abr4xas 62852ee typo @ provision/setup.sh && Vagrantfile
-* abr4xas 5340bb1 typo @ provision/setup.sh
-* abr4xas aa50e6b actualizando repo, se elimina nfs, se agrega config.vm.hostname
-* abr4xas 90a1dff actualizando repo
-* ángel 1cc089f Now with rethinkdb :smile:
-* ángel 72c6a6a Update setup.sh
-* ángel 2254814 Update setup.sh
-* ángel 760f108 Update setup.sh
-* abr4xas 4ab7a98 actualizando repo
-* abr4xas 7333721 ahora tiene sass
-* abr4xas e87af86 se configura VM para que solo use 512 de RAM
-* abr4xas fa79112 instrucciones para instalar mongodb
-* abr4xas 569bb88 instrucciones para instalar mongodb
-* abr4xas 3f8ebd8 actualizando repo
-* abr4xas 3df3b5f actualizando repo
-* abr4xas d540a89 actualizando repo
-* abr4xas dc2432e actualizando repo
-* ángel 76fece7 Update Vagrantfile
-* ángel 31158bb Update setup.sh
-* ángel b6be675 Update setup.sh
-* ángel 03e2a68 Create info.php
-* abr4xas f2ffbd1 Actualizado
-* abr4xas 7e1698f Actualizado
-* ángel d0bde65 Create php.ini
-* abr4xas be86d59 Synced folder type: rsync
-* abr4xas 7d9fa98 Synced folder type: rsync
-* abr4xas ba33af9 Actualizado README
-* abr4xas d4bf49a Actualizado README
-* abr4xas 7a77553 Actualizado README
-* abr4xas cc6e7f9 Actualizado README
-* abr4xas e3d2ffa actualizado
-* abr4xas 16e3c77 deleted
-* abr4xas 6e74e0a actualizado
-* abr4xas 9bfac82 actualizado
-* abr4xas 079fd5a fix
-* abr4xas e9773e1 Actualizando repo
-* abr4xas 8079b75 Actualizando repo
-* abr4xas 03d33f4 Actualizando repo
-* abr4xas c815f18 Actualizando Vagrantfile
-* abr4xas 1ef6337 Actualizando Vagrantfile
-* abr4xas 7f98210 Actualizando repo
-* abr4xas 70f4f2b Organizando repo
-* abr4xas 875193e Cambios en la organizacion del repo
-* abr4xas 4b1b707 Cambios menores en el repo
-* abr4xas b65295b Use Mac OS X 10.7.5
-* abr4xas 22789ed Actualizando README
-* abr4xas 676436b Actualizando README
-* abr4xas fe68133 Actualizando README
-* abr4xas 2ffda53 Actualizando repo
-* abr4xas 8a3f1ca Agregada carpeta development
-* abr4xas 36b3495 Actualizando configuraciones y documentacion
-* abr4xas 5597d2d Actualizando configuraciones y documentacion
-* abr4xas cbd6791 Actualizando repo
-* abr4xas 896c3bf Actualizando repo
-* ángel 4efcb00 Initial commit
+* [31m3013d5b[m - [32mabr4xas[m - [33m[m fix sass install problem [32m(7 weeks ago)[m
+* [31m74d0394[m - [32mabr4xas[m - [33m[m actualizando README [32m(7 weeks ago)[m
+* [31m636b814[m - [32mabr4xas[m - [33m[m fix locale warning [32m(7 weeks ago)[m
+* [31ma2801a8[m - [32mabr4xas[m - [33m[m agregada configuraciones para ReThinkDB :smile: [32m(8 weeks ago)[m
+* [31me13db55[m - [32mabr4xas[m - [33m[m actualizando gitignore [32m(8 weeks ago)[m
+* [31mfd0b224[m - [32mabr4xas[m - [33m[m actualizando README [32m(8 weeks ago)[m
+* [31m6d88e5b[m - [32mabr4xas[m - [33m[m actualizando README [32m(8 weeks ago)[m
+* [31me3ba039[m - [32mabr4xas[m - [33m[m actualizando gitignore [32m(8 weeks ago)[m
+* [31m1720b2f[m - [32mabr4xas[m - [33m[m actualizando README [32m(8 weeks ago)[m
+* [31me4c0b8d[m - [32mabr4xas[m - [33m[m actualizando README [32m(8 weeks ago)[m
+* [31m62852ee[m - [32mabr4xas[m - [33m[m typo @ provision/setup.sh && Vagrantfile [32m(8 weeks ago)[m
+* [31m5340bb1[m - [32mabr4xas[m - [33m[m typo @ provision/setup.sh [32m(8 weeks ago)[m
+* [31maa50e6b[m - [32mabr4xas[m - [33m[m actualizando repo, se elimina nfs, se agrega config.vm.hostname [32m(8 weeks ago)[m
+* [31m90a1dff[m - [32mabr4xas[m - [33m[m actualizando repo [32m(8 weeks ago)[m
+* [31m1cc089f[m - [32mángel[m - [33m[m Now with rethinkdb :smile: [32m(8 weeks ago)[m
+* [31m72c6a6a[m - [32mángel[m - [33m[m Update setup.sh [32m(8 weeks ago)[m
+* [31m2254814[m - [32mángel[m - [33m[m Update setup.sh [32m(8 weeks ago)[m
+* [31m760f108[m - [32mángel[m - [33m[m Update setup.sh [32m(9 weeks ago)[m
+* [31m4ab7a98[m - [32mabr4xas[m - [33m[m actualizando repo [32m(9 weeks ago)[m
+* [31m7333721[m - [32mabr4xas[m - [33m[m ahora tiene sass [32m(9 weeks ago)[m
+* [31me87af86[m - [32mabr4xas[m - [33m[m se configura VM para que solo use 512 de RAM [32m(9 weeks ago)[m
+* [31mfa79112[m - [32mabr4xas[m - [33m[m instrucciones para instalar mongodb [32m(9 weeks ago)[m
+* [31m569bb88[m - [32mabr4xas[m - [33m[m instrucciones para instalar mongodb [32m(9 weeks ago)[m
+* [31m3f8ebd8[m - [32mabr4xas[m - [33m[m actualizando repo [32m(9 weeks ago)[m
+* [31m3df3b5f[m - [32mabr4xas[m - [33m[m actualizando repo [32m(9 weeks ago)[m
+* [31md540a89[m - [32mabr4xas[m - [33m[m actualizando repo [32m(9 weeks ago)[m
+* [31mdc2432e[m - [32mabr4xas[m - [33m[m actualizando repo [32m(9 weeks ago)[m
+* [31m76fece7[m - [32mángel[m - [33m[m Update Vagrantfile [32m(9 weeks ago)[m
+* [31m31158bb[m - [32mángel[m - [33m[m Update setup.sh [32m(9 weeks ago)[m
+* [31mb6be675[m - [32mángel[m - [33m[m Update setup.sh [32m(3 months ago)[m
+* [31m03e2a68[m - [32mángel[m - [33m[m Create info.php [32m(3 months ago)[m
+* [31mf2ffbd1[m - [32mabr4xas[m - [33m[m Actualizado [32m(4 months ago)[m
+* [31m7e1698f[m - [32mabr4xas[m - [33m[m Actualizado [32m(4 months ago)[m
+* [31md0bde65[m - [32mángel[m - [33m[m Create php.ini [32m(4 months ago)[m
+* [31mbe86d59[m - [32mabr4xas[m - [33m[m Synced folder type: rsync [32m(5 months ago)[m
+* [31m7d9fa98[m - [32mabr4xas[m - [33m[m Synced folder type: rsync [32m(5 months ago)[m
+* [31mba33af9[m - [32mabr4xas[m - [33m[m Actualizado README [32m(5 months ago)[m
+* [31md4bf49a[m - [32mabr4xas[m - [33m[m Actualizado README [32m(5 months ago)[m
+* [31m7a77553[m - [32mabr4xas[m - [33m[m Actualizado README [32m(5 months ago)[m
+* [31mcc6e7f9[m - [32mabr4xas[m - [33m[m Actualizado README [32m(5 months ago)[m
+* [31me3d2ffa[m - [32mabr4xas[m - [33m[m actualizado [32m(5 months ago)[m
+* [31m16e3c77[m - [32mabr4xas[m - [33m[m deleted [32m(5 months ago)[m
+* [31m6e74e0a[m - [32mabr4xas[m - [33m[m actualizado [32m(5 months ago)[m
+* [31m9bfac82[m - [32mabr4xas[m - [33m[m actualizado [32m(5 months ago)[m
+* [31m079fd5a[m - [32mabr4xas[m - [33m[m fix [32m(5 months ago)[m
+* [31me9773e1[m - [32mabr4xas[m - [33m[m Actualizando repo [32m(5 months ago)[m
+* [31m8079b75[m - [32mabr4xas[m - [33m[m Actualizando repo [32m(5 months ago)[m
+* [31m03d33f4[m - [32mabr4xas[m - [33m[m Actualizando repo [32m(5 months ago)[m
+* [31mc815f18[m - [32mabr4xas[m - [33m[m Actualizando Vagrantfile [32m(5 months ago)[m
+* [31m1ef6337[m - [32mabr4xas[m - [33m[m Actualizando Vagrantfile [32m(6 months ago)[m
+* [31m7f98210[m - [32mabr4xas[m - [33m[m Actualizando repo [32m(6 months ago)[m
+* [31m70f4f2b[m - [32mabr4xas[m - [33m[m Organizando repo [32m(6 months ago)[m
+* [31m875193e[m - [32mabr4xas[m - [33m[m Cambios en la organizacion del repo [32m(6 months ago)[m
+* [31m4b1b707[m - [32mabr4xas[m - [33m[m Cambios menores en el repo [32m(6 months ago)[m
+* [31mb65295b[m - [32mabr4xas[m - [33m[m Use Mac OS X 10.7.5 [32m(6 months ago)[m
+* [31m22789ed[m - [32mabr4xas[m - [33m[m Actualizando README [32m(6 months ago)[m
+* [31m676436b[m - [32mabr4xas[m - [33m[m Actualizando README [32m(6 months ago)[m
+* [31mfe68133[m - [32mabr4xas[m - [33m[m Actualizando README [32m(6 months ago)[m
+* [31m2ffda53[m - [32mabr4xas[m - [33m[m Actualizando repo [32m(6 months ago)[m
+* [31m8a3f1ca[m - [32mabr4xas[m - [33m[m Agregada carpeta development [32m(6 months ago)[m
+* [31m36b3495[m - [32mabr4xas[m - [33m[m Actualizando configuraciones y documentacion [32m(6 months ago)[m
+* [31m5597d2d[m - [32mabr4xas[m - [33m[m Actualizando configuraciones y documentacion [32m(6 months ago)[m
+* [31mcbd6791[m - [32mabr4xas[m - [33m[m Actualizando repo [32m(6 months ago)[m
+* [31m896c3bf[m - [32mabr4xas[m - [33m[m Actualizando repo [32m(6 months ago)[m
+* [31m4efcb00[m - [32mángel[m - [33m[m Initial commit [32m(6 months ago)[m
