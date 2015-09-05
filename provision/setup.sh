@@ -33,7 +33,7 @@ echo "Downloading the Composer executable:..."
 curl -sS https://getcomposer.org/installer | php > /dev/null 2>&1
 mv composer.phar /usr/local/bin/composer > /dev/null 2>&1
 echo "Downloading and install node & npm:..."
-curl -sL https://deb.nodesource.com/setup_0.12 | -E bash - > /dev/null 2>&1
+curl -sL https://deb.nodesource.com/setup_0.12 | sudo bash - > /dev/null 2>&1
 aptitude install nodejs -y > /dev/null 2>&1
 npm update -g > /dev/null 2>&1
 npm install nodemon -g > /dev/null 2>&1
