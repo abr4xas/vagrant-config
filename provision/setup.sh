@@ -3,18 +3,18 @@ echo "Provisioning virtual machine..."
 echo "Please, wait..."
 PASSWORD='root'
 echo "Installing few things for the server:..."
-apt-get install apache2 git subversion lftp php5 libapache2-mod-php5 php5-mcrypt php5-cli php5-curl php5-gd python-pip -y
-debconf-set-selections <<< "mysql-server mysql-server/root_password password $PASSWORD"
-debconf-set-selections <<< "mysql-server mysql-server/root_password_again password $PASSWORD"
-apt-get install mysql-server libapache2-mod-auth-mysql php5-mysql -y
+apt-get install apache2 git subversion lftp php5 libapache2-mod-php5 php5-mcrypt php5-cli php5-curl php5-gd python-pip -y > /dev/null 2>&1
+debconf-set-selections <<< "mysql-server mysql-server/root_password password $PASSWORD" > /dev/null 2>&1
+debconf-set-selections <<< "mysql-server mysql-server/root_password_again password $PASSWORD" > /dev/null 2>&1
+apt-get install mysql-server libapache2-mod-auth-mysql php5-mysql -y > /dev/null 2>&1
 echo "Configuring VHOST"
-cp /var/www/000-default.conf /etc/apache2/sites-available/000-default.conf
-a2enmod rewrite deflate expires headers
-php5enmod mcrypt
-sed -i "s/error_reporting = .*/error_reporting = E_ALL/" /etc/php5/apache2/php.ini
-sed -i "s/display_errors = .*/display_errors = On/" /etc/php5/apache2/php.ini
-sed -i "s/short_open_tags = .*/short_open_tags = On/" /etc/php5/apache2/php.ini
-service apache2 restart
+cp /var/www/000-default.conf /etc/apache2/sites-available/000-default.conf > /dev/null 2>&1
+a2enmod rewrite deflate expires headers > /dev/null 2>&1
+php5enmod mcrypt > /dev/null 2>&1
+sed -i "s/error_reporting = .*/error_reporting = E_ALL/" /etc/php5/apache2/php.ini > /dev/null 2>&1
+sed -i "s/display_errors = .*/display_errors = On/" /etc/php5/apache2/php.ini > /dev/null 2>&1
+sed -i "s/short_open_tags = .*/short_open_tags = On/" /etc/php5/apache2/php.ini > /dev/null 2>&1
+service apache2 restart > /dev/null 2>&1
 echo "Downloading the Composer executable:..."
 curl -sS https://getcomposer.org/installer | php
 mv composer.phar /usr/local/bin/composer

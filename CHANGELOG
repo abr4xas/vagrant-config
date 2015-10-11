@@ -1,13 +1,14 @@
-* [31m95cd80e[m - [32mabr4xas[m - [33m (HEAD -> master)[m Agregado soporte Node.js v4.x [32m(69 seconds ago)[m
-* [31m0ba6b50[m - [32mabr4xas[m - [33m (origin/master, origin/HEAD)[m actualizando provision/setup.sh [32m(3 weeks ago)[m
+* [31m28e6f83[m - [32mabr4xas[m - [33m (HEAD -> master, origin/master, origin/HEAD)[m Agregado soporte Node.js v4.x [32m(19 hours ago)[m
+* [31m95cd80e[m - [32mabr4xas[m - [33m[m Agregado soporte Node.js v4.x [32m(19 hours ago)[m
+* [31m0ba6b50[m - [32mabr4xas[m - [33m[m actualizando provision/setup.sh [32m(4 weeks ago)[m
 * [31mfc4eae5[m - [32mabr4xas[m - [33m[m actualizando repo [32m(4 weeks ago)[m
 * [31mabf3069[m - [32mabr4xas[m - [33m[m actualizando repo [32m(5 weeks ago)[m
 * [31m85569ed[m - [32mabr4xas[m - [33m[m actualizando repo [32m(5 weeks ago)[m
 * [31m8c8ce5d[m - [32mabr4xas[m - [33m[m actualizando repo [32m(5 weeks ago)[m
 * [31m832c5de[m - [32mabr4xas[m - [33m[m actualizando repo [32m(6 weeks ago)[m
-* [31m2301143[m - [32mabr4xas[m - [33m[m Actualizando repo [32m(6 weeks ago)[m
-* [31m50198b7[m - [32mabr4xas[m - [33m[m Actualizando repo [32m(6 weeks ago)[m
-* [31m57ce57e[m - [32mabr4xas[m - [33m[m Actualizando repo [32m(6 weeks ago)[m
+* [31m2301143[m - [32mabr4xas[m - [33m[m Actualizando repo [32m(7 weeks ago)[m
+* [31m50198b7[m - [32mabr4xas[m - [33m[m Actualizando repo [32m(7 weeks ago)[m
+* [31m57ce57e[m - [32mabr4xas[m - [33m[m Actualizando repo [32m(7 weeks ago)[m
 * [31m24a14f5[m - [32mabr4xas[m - [33m[m Agregado subversion [32m(3 months ago)[m
 * [31m3dffb65[m - [32mabr4xas[m - [33m (tag: v1.0.1-alpha)[m agregando MongoDB como DB primaria [32m(3 months ago)[m
 * [31m3d05082[m - [32mabr4xas[m - [33m (tag: 1.0.0-rc, tag: 1.0.0)[m Optimizando setup.sh, se eliminan instrucciones no necesarias de instalacion y configuracion de paquetes [32m(3 months ago)[m
@@ -58,12 +59,12 @@
 * [31md0bde65[m - [32mángel[m - [33m[m Create php.ini [32m(6 months ago)[m
 * [31mbe86d59[m - [32mabr4xas[m - [33m[m Synced folder type: rsync [32m(6 months ago)[m
 * [31m7d9fa98[m - [32mabr4xas[m - [33m[m Synced folder type: rsync [32m(6 months ago)[m
-* [31mba33af9[m - [32mabr4xas[m - [33m[m Actualizado README [32m(6 months ago)[m
-* [31md4bf49a[m - [32mabr4xas[m - [33m[m Actualizado README [32m(6 months ago)[m
-* [31m7a77553[m - [32mabr4xas[m - [33m[m Actualizado README [32m(6 months ago)[m
-* [31mcc6e7f9[m - [32mabr4xas[m - [33m[m Actualizado README [32m(6 months ago)[m
-* [31me3d2ffa[m - [32mabr4xas[m - [33m[m actualizado [32m(6 months ago)[m
-* [31m16e3c77[m - [32mabr4xas[m - [33m[m deleted [32m(6 months ago)[m
+* [31mba33af9[m - [32mabr4xas[m - [33m[m Actualizado README [32m(7 months ago)[m
+* [31md4bf49a[m - [32mabr4xas[m - [33m[m Actualizado README [32m(7 months ago)[m
+* [31m7a77553[m - [32mabr4xas[m - [33m[m Actualizado README [32m(7 months ago)[m
+* [31mcc6e7f9[m - [32mabr4xas[m - [33m[m Actualizado README [32m(7 months ago)[m
+* [31me3d2ffa[m - [32mabr4xas[m - [33m[m actualizado [32m(7 months ago)[m
+* [31m16e3c77[m - [32mabr4xas[m - [33m[m deleted [32m(7 months ago)[m
 * [31m6e74e0a[m - [32mabr4xas[m - [33m[m actualizado [32m(7 months ago)[m
 * [31m9bfac82[m - [32mabr4xas[m - [33m[m actualizado [32m(7 months ago)[m
 * [31m079fd5a[m - [32mabr4xas[m - [33m[m fix [32m(7 months ago)[m
