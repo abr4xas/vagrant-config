@@ -19,7 +19,7 @@ echo "Downloading the Composer executable:..."
 curl -sS https://getcomposer.org/installer | php
 mv composer.phar /usr/local/bin/composer
 echo "Downloading and install node & npm:..."
-curl -sL https://deb.nodesource.com/setup_0.12 | sudo bash -
+curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
 apt-get install nodejs -y
 npm update -g
 npm install nodemon bower -g
