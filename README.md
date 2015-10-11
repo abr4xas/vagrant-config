@@ -13,9 +13,10 @@ ___
 
 A super-simple Vagrantfile to setup a LAMP stack inside Vagrant 100% automatically.
 
-* Setup a Ubuntu 14.04 LTS "Trustry Thar" 64bit box
+* Setup a `ubuntu/vivid64` 64bit box
 * Private network, which allows host-only access to the machine using a specific IP: ```192.168.30.10```
 * Forwarded port:
+
     * ```80 to 8080```
     * ```8000 to 8000```
     * ```3000 to 8000```
@@ -36,6 +37,7 @@ setup.sh will:
     * bower
     * nodejs
     * rethinkdb
+    * mongodb
     * sass
 * Setting a pre-chosen password for MySQL and PHPMyAdmin:
     * ```root```
