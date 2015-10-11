@@ -36,6 +36,7 @@ setup.sh will:
     * nodemon
     * bower
     * nodejs
+        * Node.js v4.x
     * rethinkdb
     * mongodb
     * sass
