@@ -1,17 +1,18 @@
-* [31mcb6808a[m - [32mabr4xas[m - [33m (HEAD -> master, origin/master, origin/HEAD)[m actualizando README [32m(28 minutes ago)[m
-* [31mcd50bf5[m - [32mabr4xas[m - [33m[m Agregado soporte a ubuntu/vivid64 para Node.js v4.x [32m(45 minutes ago)[m
-* [31m28e6f83[m - [32mabr4xas[m - [33m[m Agregado soporte Node.js v4.x [32m(19 hours ago)[m
-* [31m95cd80e[m - [32mabr4xas[m - [33m[m Agregado soporte Node.js v4.x [32m(19 hours ago)[m
+* [31m99eb0c7[m - [32mabr4xas[m - [33m (HEAD -> master, tag: v2.0, origin/master, origin/HEAD)[m actualizando README [32m(3 days ago)[m
+* [31mcb6808a[m - [32mabr4xas[m - [33m[m actualizando README [32m(3 days ago)[m
+* [31mcd50bf5[m - [32mabr4xas[m - [33m[m Agregado soporte a ubuntu/vivid64 para Node.js v4.x [32m(3 days ago)[m
+* [31m28e6f83[m - [32mabr4xas[m - [33m[m Agregado soporte Node.js v4.x [32m(4 days ago)[m
+* [31m95cd80e[m - [32mabr4xas[m - [33m[m Agregado soporte Node.js v4.x [32m(4 days ago)[m
 * [31m0ba6b50[m - [32mabr4xas[m - [33m[m actualizando provision/setup.sh [32m(4 weeks ago)[m
 * [31mfc4eae5[m - [32mabr4xas[m - [33m[m actualizando repo [32m(4 weeks ago)[m
-* [31mabf3069[m - [32mabr4xas[m - [33m[m actualizando repo [32m(5 weeks ago)[m
-* [31m85569ed[m - [32mabr4xas[m - [33m[m actualizando repo [32m(5 weeks ago)[m
-* [31m8c8ce5d[m - [32mabr4xas[m - [33m[m actualizando repo [32m(5 weeks ago)[m
-* [31m832c5de[m - [32mabr4xas[m - [33m[m actualizando repo [32m(6 weeks ago)[m
+* [31mabf3069[m - [32mabr4xas[m - [33m[m actualizando repo [32m(6 weeks ago)[m
+* [31m85569ed[m - [32mabr4xas[m - [33m[m actualizando repo [32m(6 weeks ago)[m
+* [31m8c8ce5d[m - [32mabr4xas[m - [33m[m actualizando repo [32m(6 weeks ago)[m
+* [31m832c5de[m - [32mabr4xas[m - [33m[m actualizando repo [32m(7 weeks ago)[m
 * [31m2301143[m - [32mabr4xas[m - [33m[m Actualizando repo [32m(7 weeks ago)[m
 * [31m50198b7[m - [32mabr4xas[m - [33m[m Actualizando repo [32m(7 weeks ago)[m
 * [31m57ce57e[m - [32mabr4xas[m - [33m[m Actualizando repo [32m(7 weeks ago)[m
-* [31m24a14f5[m - [32mabr4xas[m - [33m[m Agregado subversion [32m(3 months ago)[m
+* [31m24a14f5[m - [32mabr4xas[m - [33m (tag: 1.0.1-alpha.2)[m Agregado subversion [32m(3 months ago)[m
 * [31m3dffb65[m - [32mabr4xas[m - [33m (tag: v1.0.1-alpha)[m agregando MongoDB como DB primaria [32m(3 months ago)[m
 * [31m3d05082[m - [32mabr4xas[m - [33m (tag: 1.0.0-rc, tag: 1.0.0)[m Optimizando setup.sh, se eliminan instrucciones no necesarias de instalacion y configuracion de paquetes [32m(3 months ago)[m
 * [31m43dff25[m - [32mabr4xas[m - [33m (tag: 1.0.0-beta)[m actualizando setup.sh :smile: [32m(3 months ago)[m
@@ -41,7 +42,7 @@
 * [31m90a1dff[m - [32mabr4xas[m - [33m[m actualizando repo [32m(3 months ago)[m
 * [31m1cc089f[m - [32mángel[m - [33m[m Now with rethinkdb :smile: [32m(3 months ago)[m
 * [31m72c6a6a[m - [32mángel[m - [33m[m Update setup.sh [32m(3 months ago)[m
-* [31m2254814[m - [32mángel[m - [33m[m Update setup.sh [32m(3 months ago)[m
+* [31m2254814[m - [32mángel[m - [33m[m Update setup.sh [32m(4 months ago)[m
 * [31m760f108[m - [32mángel[m - [33m[m Update setup.sh [32m(4 months ago)[m
 * [31m4ab7a98[m - [32mabr4xas[m - [33m[m actualizando repo [32m(4 months ago)[m
 * [31m7333721[m - [32mabr4xas[m - [33m[m ahora tiene sass [32m(4 months ago)[m
@@ -59,8 +60,8 @@
 * [31mf2ffbd1[m - [32mabr4xas[m - [33m[m Actualizado [32m(6 months ago)[m
 * [31m7e1698f[m - [32mabr4xas[m - [33m[m Actualizado [32m(6 months ago)[m
 * [31md0bde65[m - [32mángel[m - [33m[m Create php.ini [32m(6 months ago)[m
-* [31mbe86d59[m - [32mabr4xas[m - [33m[m Synced folder type: rsync [32m(6 months ago)[m
-* [31m7d9fa98[m - [32mabr4xas[m - [33m[m Synced folder type: rsync [32m(6 months ago)[m
+* [31mbe86d59[m - [32mabr4xas[m - [33m[m Synced folder type: rsync [32m(7 months ago)[m
+* [31m7d9fa98[m - [32mabr4xas[m - [33m[m Synced folder type: rsync [32m(7 months ago)[m
 * [31mba33af9[m - [32mabr4xas[m - [33m[m Actualizado README [32m(7 months ago)[m
 * [31md4bf49a[m - [32mabr4xas[m - [33m[m Actualizado README [32m(7 months ago)[m
 * [31m7a77553[m - [32mabr4xas[m - [33m[m Actualizado README [32m(7 months ago)[m
