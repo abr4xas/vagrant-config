@@ -63,5 +63,41 @@ echo "20000" > /sys/kernel/mm/transparent_hugepage/khugepaged/pages_to_scan > /d
 echo "1" > /sys/kernel/mm/ksm/run > /dev/null 2>&1
 echo "20000" > /sys/kernel/mm/ksm/pages_to_scan > /dev/null 2>&1
 echo "200" > /sys/kernel/mm/ksm/sleep_millisecs > /dev/null 2>&1
+#
+# calc-mem
+# author @sinfallas
+# url: https://github.com/sinfallas/calc-mem
+#
+memor=$(grep MemTotal /proc/meminfo | awk '{print $2}')
+page_size=$(getconf PAGE_SIZE)
+phys_pages=$(getconf _PHYS_PAGES)
+shmall=$(( $phys_pages / 2 ))
+shmmax=$(( $shmall * $page_size ))
+mkdir -p /etc/sysctl.d
+echo "kernel.shmmax = $shmmax" > /etc/sysctl.d/calc-mem.conf
+echo "kernel.shmall = $shmall" >> /etc/sysctl.d/calc-mem.conf
+if (( $memor < 1024000 )); then
+echo "vm.dirty_ratio = 25" >> /etc/sysctl.d/calc-mem.conf
+echo "vm.dirty_background_ratio = 15" >> /etc/sysctl.d/calc-mem.conf
+echo "vm.dirty_expire_centisecs = 750" >> /etc/sysctl.d/calc-mem.conf
+echo "vm.dirty_writeback_centisecs = 125" >> /etc/sysctl.d/calc-mem.conf
+else
+if (( $memor > 4096000 )); then
+echo "vm.swappiness = 10" >> /etc/sysctl.d/calc-mem.conf
+echo "vm.vfs_cache_pressure = 50" >> /etc/sysctl.d/calc-mem.conf
+fi
+if (( $memor < 8192000 )); then
+echo "vm.dirty_ratio = 12" >> /etc/sysctl.d/calc-mem.conf
+echo "vm.dirty_background_ratio = 10" >> /etc/sysctl.d/calc-mem.conf
+echo "vm.dirty_expire_centisecs = 1500" >> /etc/sysctl.d/calc-mem.conf
+echo "vm.dirty_writeback_centisecs = 250" >> /etc/sysctl.d/calc-mem.conf
+else
+echo "vm.dirty_ratio = 3" >> /etc/sysctl.conf
+echo "vm.dirty_background_ratio = 5" >> /etc/sysctl.d/calc-mem.conf
+echo "vm.dirty_expire_centisecs = 3000" >> /etc/sysctl.d/calc-mem.conf
+echo "vm.dirty_writeback_centisecs = 500" >> /etc/sysctl.d/calc-mem.conf
+fi
+fi
+sysctl -p
 echo -e "\e[00;1;92mFinished provisioning... Please reboot\e[00m"
 exit 0
