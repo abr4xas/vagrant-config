@@ -49,15 +49,6 @@ npm install nodemon bower -g > /dev/null 2>&1
 #echo "deb http://repo.mongodb.org/apt/ubuntu "$(lsb_release -sc)"/mongodb-org/3.0 multiverse" | tee /etc/apt/sources.list.d/mongodb-org-3.0.list
 #apt-get update -y
 #apt-get install mongodb-org -y
-#
-# Optimize
-# author @sinfallas
-# url: https://github.com/sinfallas/optimize
-#
-modprobe zram > /dev/null 2>&1
-echo "104857600" > /sys/block/zram0/disksize > /dev/null 2>&1
-mkswap /dev/zram0 > /dev/null 2>&1
-swapon /dev/zram0 > /dev/null 2>&1
 echo "always" > /sys/kernel/mm/transparent_hugepage/enabled > /dev/null 2>&1
 echo "20000" > /sys/kernel/mm/transparent_hugepage/khugepaged/pages_to_scan > /dev/null 2>&1
 echo "1" > /sys/kernel/mm/ksm/run > /dev/null 2>&1
