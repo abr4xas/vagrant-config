@@ -26,7 +26,6 @@ setup.sh will:
 * Install:
     * apache2
     * git
-    * lftp
     * php5
     * libapache2-mod-php5
     * php5-mcrypt
@@ -37,9 +36,10 @@ setup.sh will:
     * bower
     * nodejs
         * Node.js v4.x
-    * rethinkdb
-    * mongodb
+    * ~~rethinkdb~~
+    * ~~mongodb~~
     * sass
+
 * Setting a pre-chosen password for MySQL and PHPMyAdmin:
     * ```root```
 * Activate:
