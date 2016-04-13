@@ -1,7 +1,6 @@
 *
 !.gitignore
 !dev
-!dev/html
 !provision
 !README.md
 !Vagrantfile
