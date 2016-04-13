@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 set -eu
 LC_ALL=C
 echo "Provisioning virtual machine..."
@@ -7,18 +7,28 @@ PASSWORD='root'
 echo "Installing few things for the server:..."
 export DEBIAN_FRONTEND=noninteractive
 apt-get update --fix-missing > /dev/null 2>&1
-apt-get install apache2 php5 php5-mcrypt php5-cli php5-curl php5-gd -y > /dev/null 2>&1
+apt-get install php5 php5-fpm php5-mcrypt php5-cli php5-curl php5-gd -y > /dev/null 2>&1
 debconf-set-selections <<< "mysql-server mysql-server/root_password password $PASSWORD" > /dev/null 2>&1
 debconf-set-selections <<< "mysql-server mysql-server/root_password_again password $PASSWORD" > /dev/null 2>&1
 apt-get install mysql-server php5-mysql -y > /dev/null 2>&1
-echo "Configuring VHOST"
-cp /var/www/000-default.conf /etc/apache2/sites-available/000-default.conf > /dev/null 2>&1
-a2enmod rewrite deflate expires headers > /dev/null 2>&1
+echo "Install nginx"
+echo "deb http://ppa.launchpad.net/nginx/stable/ubuntu $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/nginx-stable.list
+apt-key adv --keyserver keyserver.ubuntu.com --recv-keys C300EE8C
+apt-get update -y
+apt-get install nginx -y
+echo "Applying modifications to php5-fpm"
+sed -i '/cgi.fix_pathinfo=1/c cgi.fix_pathinfo=0' /etc/php5/fpm/php.ini
+sed -i '/max_execution_time = 30/c max_execution_time = 300' /etc/php5/fpm/php.ini
+sed -i "s/error_reporting = .*/error_reporting = E_ALL/" /etc/php5/fpm/php.ini > /dev/null 2>&1
+sed -i "s/display_errors = .*/display_errors = On/" /etc/php5/fpm/php.ini > /dev/null 2>&1
+sed -i "s/short_open_tags = .*/short_open_tags = On/" /etc/php5/fpm/php.ini > /dev/null 2>&1
 php5enmod mcrypt > /dev/null 2>&1
-sed -i "s/error_reporting = .*/error_reporting = E_ALL/" /etc/php5/apache2/php.ini > /dev/null 2>&1
-sed -i "s/display_errors = .*/display_errors = On/" /etc/php5/apache2/php.ini > /dev/null 2>&1
-sed -i "s/short_open_tags = .*/short_open_tags = On/" /etc/php5/apache2/php.ini > /dev/null 2>&1
-service apache2 restart > /dev/null 2>&1
+echo "Configuring NGINX conf"
+rm /etc/nginx/nginx.conf
+cp /var/www/html/nginx.conf /etc/nginx/
+echo "Configuring VHOST"
+rm /etc/nginx/sites-available/default
+cp /var/www/html/default /etc/nginx/sites-available/
 echo "Downloading the Composer executable:..."
 curl -sS https://getcomposer.org/installer | php > /dev/null 2>&1
 mv composer.phar /usr/local/bin/composer > /dev/null 2>&1
