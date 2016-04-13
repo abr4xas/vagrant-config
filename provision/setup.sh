@@ -12,26 +12,26 @@ debconf-set-selections <<< "mysql-server mysql-server/root_password password $PA
 debconf-set-selections <<< "mysql-server mysql-server/root_password_again password $PASSWORD" > /dev/null 2>&1
 apt-get install mysql-server php5-mysql -y > /dev/null 2>&1
 echo "Install nginx"
-echo "deb http://ppa.launchpad.net/nginx/stable/ubuntu $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/nginx-stable.list
-apt-key adv --keyserver keyserver.ubuntu.com --recv-keys C300EE8C
-apt-get update -y
-apt-get install nginx -y
+echo "deb http://ppa.launchpad.net/nginx/stable/ubuntu $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/nginx-stable.list > /dev/null 2>&1
+apt-key adv --keyserver keyserver.ubuntu.com --recv-keys C300EE8C > /dev/null 2>&1
+apt-get update -y > /dev/null 2>&1
+apt-get install nginx -y > /dev/null 2>&1
 echo "Applying modifications to php5-fpm"
-sed -i '/cgi.fix_pathinfo=1/c cgi.fix_pathinfo=0' /etc/php5/fpm/php.ini
-sed -i '/max_execution_time = 30/c max_execution_time = 300' /etc/php5/fpm/php.ini
+sed -i '/cgi.fix_pathinfo=1/c cgi.fix_pathinfo=0' /etc/php5/fpm/php.ini > /dev/null 2>&1
+sed -i '/max_execution_time = 30/c max_execution_time = 300' /etc/php5/fpm/php.ini > /dev/null 2>&1
 sed -i "s/error_reporting = .*/error_reporting = E_ALL/" /etc/php5/fpm/php.ini > /dev/null 2>&1
 sed -i "s/display_errors = .*/display_errors = On/" /etc/php5/fpm/php.ini > /dev/null 2>&1
 sed -i "s/short_open_tags = .*/short_open_tags = On/" /etc/php5/fpm/php.ini > /dev/null 2>&1
 php5enmod mcrypt > /dev/null 2>&1
 echo "Configuring NGINX conf"
-rm /etc/nginx/nginx.conf
-cp /var/www/html/nginx.conf /etc/nginx/
+rm /etc/nginx/nginx.conf > /dev/null 2>&1
+cp /var/www/html/nginx.conf /etc/nginx/ > /dev/null 2>&1
 echo "Configuring VHOST"
-rm /etc/nginx/sites-available/default
-cp /var/www/html/default /etc/nginx/sites-available/
+rm /etc/nginx/sites-available/default > /dev/null 2>&1
+cp /var/www/html/default /etc/nginx/sites-available/ > /dev/null 2>&1
 # Restart
-service nginx restart
-service php5-fpm restart
+service nginx restart > /dev/null 2>&1
+service php5-fpm restart > /dev/null 2>&1
 echo "Downloading the Composer executable:..."
 curl -sS https://getcomposer.org/installer | php > /dev/null 2>&1
 mv composer.phar /usr/local/bin/composer > /dev/null 2>&1
