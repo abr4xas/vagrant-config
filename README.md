@@ -26,7 +26,7 @@ setup.sh will:
 * Install:
     * ~~apache2~~ now: NGINX
     * git
-    * ~~libapache2-mod-php5~~ see #4
+    * ~~libapache2-mod-php5~~ see #[4](https://github.com/abr4xas/vagrant-config/issues/4)
     * php
       * php5-mcrypt
       * php5-cli
