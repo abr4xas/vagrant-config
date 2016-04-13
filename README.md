@@ -13,43 +13,32 @@ ___
 
 A super-simple Vagrantfile to setup a LAMP stack inside Vagrant 100% automatically.
 
-* Setup a `ubuntu/vivid64` 64bit box
+* Setup a `ubuntu/wily64` 64bit box
 * Private network, which allows host-only access to the machine using a specific IP: ```192.168.30.10```
 * Forwarded port:
 
-    * ```80 to 8080```
-    * ```8000 to 8000```
-    * ```3000 to 8000```
+    * `80` to `8080`
+    * `8000` to `8000`
+    * `3000` to `8000`
 
 setup.sh will:
 
 * Install:
-    * apache2
+    * ~~apache2~~ now: NGINX
     * git
-    * php5
-    * libapache2-mod-php5
-    * php5-mcrypt
-    * php5-cli
-    * php5-curl
-    * python-pip
-    * nodemon
+    * ~~libapache2-mod-php5~~ see #4
+    * php
+      * php5-mcrypt
+      * php5-cli
+      * php5-curl
     * bower
     * nodejs
         * Node.js v4.x
-    * ~~rethinkdb~~
-    * ~~mongodb~~
-    * sass
+    * ~~rethinkdb~~ not for today
+    * ~~mongodb~~ not for today
 
 * Setting a pre-chosen password for MySQL and PHPMyAdmin:
     * ```root```
-* Activate:
-    * ```mod_rewrite```
-
-and add:
-* ```AllowOverride All```
-
-to the vhost settings.
-
 
 ## Connect to the Virtual Machine
 

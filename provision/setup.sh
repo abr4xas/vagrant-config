@@ -7,7 +7,7 @@ PASSWORD='root'
 echo "Installing few things for the server:..."
 export DEBIAN_FRONTEND=noninteractive
 apt-get update --fix-missing > /dev/null 2>&1
-apt-get install php5 php5-fpm php5-mcrypt php5-cli php5-curl php5-gd -y > /dev/null 2>&1
+apt-get install php5-fpm php5-mcrypt php5-cli php5-curl php5-gd -y > /dev/null 2>&1
 debconf-set-selections <<< "mysql-server mysql-server/root_password password $PASSWORD" > /dev/null 2>&1
 debconf-set-selections <<< "mysql-server mysql-server/root_password_again password $PASSWORD" > /dev/null 2>&1
 apt-get install mysql-server php5-mysql -y > /dev/null 2>&1
@@ -29,6 +29,9 @@ cp /var/www/html/nginx.conf /etc/nginx/
 echo "Configuring VHOST"
 rm /etc/nginx/sites-available/default
 cp /var/www/html/default /etc/nginx/sites-available/
+# Restart
+service nginx restart
+service php5-fpm restart
 echo "Downloading the Composer executable:..."
 curl -sS https://getcomposer.org/installer | php > /dev/null 2>&1
 mv composer.phar /usr/local/bin/composer > /dev/null 2>&1
@@ -36,7 +39,6 @@ echo "Downloading and install node & npm:..."
 curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash - > /dev/null 2>&1
 apt-get install nodejs -y > /dev/null 2>&1
 npm update -g > /dev/null 2>&1
-npm install bower -g > /dev/null 2>&1
 #echo "Installing rethinkdb:..."
 #aptitude install rethinkdb -y
 #source /etc/lsb-release && echo "deb http://download.rethinkdb.com/apt $DISTRIB_CODENAME main" | tee /etc/apt/sources.list.d/rethinkdb.list
