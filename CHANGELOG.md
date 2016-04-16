@@ -2,7 +2,7 @@
 
 > Todos los cambios significativos serán registrados en éste documento.
 
-## [3.0.1](https://github.com/abr4xas/vagrant-config/releases/tag/3.0.0) 2016-04-12
+## [3.0.1](https://github.com/abr4xas/vagrant-config/releases/tag/3.0.1) 2016-04-12
 
 ### Nuevo:
 
