@@ -4,6 +4,7 @@ LC_ALL=C
 echo "Provisioning virtual machine..."
 echo "Please, wait..."
 PASSWORD='root'
+# https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-ubuntu-14-04
 echo "Adding Swap"
 fallocate -l 4G /swapfile > /dev/null 2>&1
 chmod 600 /swapfile > /dev/null 2>&1
@@ -47,6 +48,7 @@ mv composer.phar /usr/local/bin/composer > /dev/null 2>&1
 echo "Downloading and install node & npm:..."
 curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash - > /dev/null 2>&1
 apt-get install nodejs -y > /dev/null 2>&1
+npm set progress=false -g > /dev/null 2>&1
 npm update -g > /dev/null 2>&1
 #echo "Installing rethinkdb:..."
 #aptitude install rethinkdb -y
