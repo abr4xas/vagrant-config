@@ -4,6 +4,15 @@ LC_ALL=C
 echo "Provisioning virtual machine..."
 echo "Please, wait..."
 PASSWORD='root'
+echo "Adding Swap"
+fallocate -l 4G /swapfile > /dev/null 2>&1
+chmod 600 /swapfile > /dev/null 2>&1
+mkswap /swapfile > /dev/null 2>&1
+swapon /swapfile > /dev/null 2>&1
+echo "/swapfile   none    swap    sw    0   0" >> /etc/fstab > /dev/null 2>&1
+echo "Tweak Swap Settings"
+sysctl vm.swappiness=10 > /dev/null 2>&1
+vm.vfs_cache_pressure = 50 > /dev/null 2>&1
 echo "Installing few things for the server:..."
 export DEBIAN_FRONTEND=noninteractive
 apt-get update --fix-missing > /dev/null 2>&1
